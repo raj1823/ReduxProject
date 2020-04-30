@@ -25,7 +25,7 @@ class ListComponent extends React.Component{
       {     
         //this.props.queriedData(this.state.queryData)
         console.log("global query: ",this.state.queryData)
-         this.props.fetch_data(queryData).then(resolve=>{
+         this.props.fetch_data(queryData,this.props.token).then(resolve=>{
           if(resolve=="Resolved")
           {
             this.setState({visible:true})

@@ -5,7 +5,7 @@ import {API_LINK,SEARCH_API_LINK} from '../Data_Service/constant'
 
 
 
-export function dataFetch(){
+export function dataFetch(token){
   return dispatch=>{ console.log("inside dataFetch")
 
     
@@ -18,7 +18,7 @@ export function dataFetch(){
                     {
                       method: 'GET',
                       headers: {
-                       authorization: "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJheGZvb2QiLCJleHAiOjE1ODc4MTYxNTl9.bJx0taCD_UCBexmeCnF5TecUbkTBJijTL6OBAKPTLSPMcOzS33GyhM2WO8rZ-DAH_D2gEPYK0OgNPHQyb3leqg"
+                       authorization: token
               
                          
               
@@ -57,7 +57,7 @@ export function dataFetch(){
 }
 
 
-export function queryDataFetch(query){
+export function queryDataFetch(query,token){
   return dispatch=>{ console.log("inside dataFetch")
 
     
@@ -71,7 +71,7 @@ export function queryDataFetch(query){
                     {
                       method: 'GET',
                       headers: {
-                       authorization: "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJheGZvb2QiLCJleHAiOjE1ODc4MTYxNTl9.bJx0taCD_UCBexmeCnF5TecUbkTBJijTL6OBAKPTLSPMcOzS33GyhM2WO8rZ-DAH_D2gEPYK0OgNPHQyb3leqg"
+                       authorization:token
               
                          
               

@@ -20,7 +20,7 @@ class Profile extends React.Component {
   apiFetchData() {
     console.log("Raj")
     
-   this.props.data_fetch().then(resolve=>{
+   this.props.data_fetch(this.props.token).then(resolve=>{
      if(resolve=="Resolved")
      {
     this.props.navigation.navigate('List')
