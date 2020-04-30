@@ -29,11 +29,17 @@ class Profile extends React.Component {
 
 
    },reject=>{
-     if(reject=="Rejected")
+     if(reject=="ServerIssue")
      {
      alert("Server Error")
      this.setState({isLoading: false});
      }
+     else if(reject=="Rejected")
+     {
+       alert("Data Error")
+       this.setState({isLoading:false})
+     }
+     
 
 
    })

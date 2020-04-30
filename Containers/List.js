@@ -1,6 +1,6 @@
 import {connect} from 'react-redux'
 import ListComponent from '../Components/ListComponent'
-import {dataFetch,queryDataFetch} from '../Data_Service/fetchData'
+import {queryDataFetch} from '../Data_Service/fetchData'
 
 
 const mapStateToProps=(state)=>({

@@ -13,13 +13,12 @@ export function dataFetch(){
 
                 console.log("fetch Data called")
 
-                //console.log("link:",API_LINK)
-                //console.log("query: ",query)
+               
                 fetch(API_LINK,
                     {
                       method: 'GET',
                       headers: {
-                       authorization: "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJheGZvb2QiLCJleHAiOjE1ODc2NzQ4OTh9.3xbHEM4Yy3Ge2b_0MRZsxjzWvipNLTUIvH1YPZtrte59B9pO-CYTehobq5LZRc6lkkYRunTjCJuXGR75gDacgw"
+                       authorization: "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJheGZvb2QiLCJleHAiOjE1ODc4MTYxNTl9.bJx0taCD_UCBexmeCnF5TecUbkTBJijTL6OBAKPTLSPMcOzS33GyhM2WO8rZ-DAH_D2gEPYK0OgNPHQyb3leqg"
               
                          
               
@@ -36,7 +35,11 @@ export function dataFetch(){
                         return response.json()
 
                       }
-                      else {console.log("hcadc: ",response.status)}
+                      else {console.log("hcadc: ",response.status)
+                    
+                          reject("ServerIssue")
+                    
+                    }
 
                     }).then(data => {
                         console.log("data :",data)
@@ -68,7 +71,7 @@ export function queryDataFetch(query){
                     {
                       method: 'GET',
                       headers: {
-                       authorization: "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJheGZvb2QiLCJleHAiOjE1ODc2NzQ4OTh9.3xbHEM4Yy3Ge2b_0MRZsxjzWvipNLTUIvH1YPZtrte59B9pO-CYTehobq5LZRc6lkkYRunTjCJuXGR75gDacgw"
+                       authorization: "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJheGZvb2QiLCJleHAiOjE1ODc4MTYxNTl9.bJx0taCD_UCBexmeCnF5TecUbkTBJijTL6OBAKPTLSPMcOzS33GyhM2WO8rZ-DAH_D2gEPYK0OgNPHQyb3leqg"
               
                          
               
