@@ -57,6 +57,7 @@ class Profile extends React.Component {
    
     return (
       isLoading? <ActivityWaiter/>:
+      <SafeAreaView style={{flex:1}}>
       <View style={{flex: 1}}>
      
         <View style={{flex: 1, backgroundColor:"#fff"}}>
@@ -65,6 +66,9 @@ class Profile extends React.Component {
             
             <TouchableOpacity
               onPress={() => {
+
+                this.props.navigation.navigate("Home")
+
                 
                 
               }}>
@@ -88,6 +92,7 @@ class Profile extends React.Component {
          
         </View>
         </View>
+        </SafeAreaView>
       
       
       
